@@ -1,0 +1,35 @@
+[build-system]
+requires = ["setuptools>=42", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "aidocs"
+version = "0.1.0"
+authors = [
+  { name="Ariel Serranoni", email="ariel@example.com" },
+]
+description = "A CLI tool for managing AI assistant context documentation across development projects"
+readme = "README.md"
+requires-python = ">=3.7"
+license = "MIT"
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Documentation",
+    "Topic :: Text Processing :: Markup",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.7",
+    "Programming Language :: Python :: 3.8",
+    "Programming Language :: Python :: 3.9",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Operating System :: OS Independent",
+]
+keywords = ["ai", "documentation", "cli", "symlinks", "context"]
+
+[project.scripts]
+aidocs = "aidocs_pkg.main:main"
+
+[project.urls]
+"Bug Tracker" = "https://github.com/arielserranoni/aidocs/issues"
+"Source" = "https://github.com/arielserranoni/aidocs"

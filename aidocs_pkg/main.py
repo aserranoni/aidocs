@@ -314,8 +314,16 @@ def main():
             sys.exit(1)
         search_path = sys.argv[2]
         check(search_path)
+    elif command == "help" or command == "--help" or command == "-h":
+        print("Usage: aidocs <command> [args]")
+        print("Commands:")
+        print("  setup                  Initialize global configuration")
+        print("  init <project_path>    Initialize aidocs in a project")
+        print("  edit <project_path>    Edit aidocs.md in project")
+        print("  check <search_path>    Check compliance recursively")
     else:
         print(f"Unknown command: {command}")
+        print("Run 'aidocs help' for usage information.")
         sys.exit(1)
 
 if __name__ == "__main__":
